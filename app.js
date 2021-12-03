@@ -6,6 +6,18 @@ let button = document.getElementById('send');
 let chances = document.getElementById('chances');
 let motGenerer = document.getElementById('motGenerer');
 
+let un = document.getElementById('1');
+let deux = document.getElementById('2');
+let trois = document.getElementById('3');
+let quatre = document.getElementById('4');
+let cinq = document.getElementById('5');
+let six = document.getElementById('6');
+let sept = document.getElementById('7');
+let huit = document.getElementById('8');
+let neuf = document.getElementById('9');
+let dix = document.getElementById('10');
+
+
 chance = 7;
 
 let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'katana',
@@ -27,25 +39,34 @@ let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'kata
 function send() {
 
     if (input.value === mots[randomMot].slice(0, 1)) {
-        good.innerHTML += input.value + ' ';
+        un.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(1, 2)) {
-        good.innerHTML += input.value + ' ';
+        deux.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(2, 3)) {
-        good.innerHTML += input.value + ' ';
+        trois.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(3, 4)) {
-        good.innerHTML += input.value + ' ';
+        quatre.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(4, 5)) {
-        good.innerHTML += input.value + ' ';
+        cinq.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(5, 6)) {
-        good.innerHTML += input.value + ' ';
+        six.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(7, 8)) {
-        good.innerHTML += input.value + ' ';
+        sept.innerHTML += input.value + ' ';
+    }
+    if (input.value === mots[randomMot].slice(8, 9)) {
+        huit.innerHTML += input.value + ' ';
+    }
+    if (input.value === mots[randomMot].slice(9, 10)) {
+        neuf.innerHTML += input.value + ' ';
+    }
+    if (input.value === mots[randomMot].slice(10, 11)) {
+        dix.innerHTML += input.value + ' ';
     }
     if (input.value !== mots[randomMot].includes(input.value)) {
         error.innerHTML += input.value + ' '

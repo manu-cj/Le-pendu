@@ -13,6 +13,13 @@ body {
     margin: 15px;
 }
 
+#reponse {
+    width: 20%;
+    height: 5%;
+    border: ridge 3px royalblue;
+    display: flex;
+    flex-direction: row;
+}
 
 #jeu {
     width: 90%;
