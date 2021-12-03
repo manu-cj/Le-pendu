@@ -77,7 +77,7 @@ function send() {
         chances.innerHTML = 'Il vous reste : ' + chance-- + ' tentatives';
     }
     if (chance < -1){
-        chances.innerHTML = 'Perdu, le mot était :' + mots[randomMot];
+        chances.innerHTML = 'Perdu, le mot était : ' + mots[randomMot];
     }
 
 }

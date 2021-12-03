@@ -13,6 +13,14 @@ body {
     margin: 15px;
 }
 
+#jeu {
+   text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #reponse {
     width: 20%;
     height: 5%;
