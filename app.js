@@ -27,16 +27,15 @@ let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'kata
 
 
 
-//function generer() {
+function generer() {
 
 
-        let randomMot = Math.floor(Math.random() * mots.length);
-        console.log(randomMot);
-        motGenerer.innerHTML = mots[randomMot];
+    let randomMot = Math.floor(Math.random() * mots.length);
+    console.log(randomMot);
+    motGenerer.innerHTML = mots[randomMot];
+    nombreLettre.innerHTML = 'Nombre de lettre : ' + mots[randomMot].length;
 
-        nombreLettre.innerHTML = 'Nombre de lettre : ' + mots[randomMot].length;
-
-
+}
 
 
 
@@ -88,6 +87,6 @@ button.addEventListener("click", function (){
     send()
 })
 
-//jouer.addEventListener("click", function (){
-    //generer()
-//})
+jouer.addEventListener("click", function () {
+    generer()
+})
