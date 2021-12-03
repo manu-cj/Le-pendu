@@ -1,7 +1,5 @@
 let error = document.getElementById('erreur');
-let good = document.getElementById('bonne-réponses');
 let input = document.getElementById('input');
-let jouer = document.getElementById('jouer');
 let button = document.getElementById('send');
 let chances = document.getElementById('chances');
 let motGenerer = document.getElementById('motGenerer');
@@ -34,9 +32,6 @@ let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'kata
     console.log(randomMot);
     motGenerer.innerHTML = mots[randomMot];
     nombreLettre.innerHTML = 'Nombre de lettre : ' + mots[randomMot].length;
-
-
-
 
 
 function send() {
@@ -80,6 +75,9 @@ function send() {
     if (input.value !== mots[randomMot]) {
         error.innerHTML += input.value + ' ';
         chances.innerHTML = 'Il vous reste : ' + chance-- + ' tentatives';
+    }
+    if (chance < -1){
+        chances.innerHTML = 'Perdu, le mot était :' + mots[randomMot];
     }
 
 }
