@@ -16,16 +16,18 @@ body {
 #reponse {
     width: 20%;
     height: 5%;
-    border: ridge 3px royalblue;
     display: flex;
     flex-direction: row;
+    margin: 15px;
 }
 
 .mot {
-    width: 10%;
+    width: 35%;
     height: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     overflow: hidden;
+    border-bottom: ridge 1px black;
+    margin: 5px;
 
 }
 

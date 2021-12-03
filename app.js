@@ -6,6 +6,8 @@ let button = document.getElementById('send');
 let chances = document.getElementById('chances');
 let motGenerer = document.getElementById('motGenerer');
 
+let nombreLettre = document.getElementById('nombreLettre');
+
 let un = document.getElementById('1');
 let deux = document.getElementById('2');
 let trois = document.getElementById('3');
@@ -31,6 +33,8 @@ let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'kata
         let randomMot = Math.floor(Math.random() * mots.length);
         console.log(randomMot);
         motGenerer.innerHTML = mots[randomMot];
+
+        nombreLettre.innerHTML = 'Nombre de lettre : ' + mots[randomMot].length;
 
 
 
@@ -71,7 +75,10 @@ function send() {
     if (input.value === mots[randomMot].slice(10, 11)) {
         dix.innerHTML += input.value + ' ';
     }
-    if (input.value !== mots[randomMot].includes(input.value)) {
+    if (input.value === mots[randomMot].slice(0)) {
+        alert('win')
+    }
+    if (input.value !== mots[randomMot]) {
         error.innerHTML += input.value + ' '
     }
 
