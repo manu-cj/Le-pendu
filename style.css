@@ -1,0 +1,27 @@
+
+
+
+
+#jeu {
+    width: 90%;
+    height: 700px;
+    border: ridge 5px royalblue;
+}
+
+#pendu {
+    width: 30%;
+    height: 90%;
+    border: ridge 5px royalblue;
+}
+
+#barre-horizontale {
+    width: 60%;
+    height: 3%;
+    background-color: black;
+}
+
+#barre-laterale {
+    width: 3%;
+    height: 60%;
+    background-color: black;
+}
