@@ -1,11 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
 
 
 #jeu {
     width: 90%;
     height: 700px;
     border: ridge 5px royalblue;
+    margin: 15px;
 }
 
 #pendu {
