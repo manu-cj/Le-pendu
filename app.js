@@ -20,14 +20,14 @@ let neuf = document.getElementById('9');
 let dix = document.getElementById('10');
 
 
-chance = 7;
+chance = 14;
 
 let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'katana',
     'reveil', 'crayon', 'bug', 'zemour', 'genetique', 'negatif',];
 
 
 
-function generer() {
+
 
 
     let randomMot = Math.floor(Math.random() * mots.length);
@@ -35,7 +35,7 @@ function generer() {
     motGenerer.innerHTML = mots[randomMot];
     nombreLettre.innerHTML = 'Nombre de lettre : ' + mots[randomMot].length;
 
-}
+
 
 
 
@@ -75,10 +75,11 @@ function send() {
         dix.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(0)) {
-        alert('win')
+        alert('win');
     }
     if (input.value !== mots[randomMot]) {
-        error.innerHTML += input.value + ' '
+        error.innerHTML += input.value + ' ';
+        chances.innerHTML = 'Il vous reste : ' + chance-- + ' tentatives';
     }
 
 }
@@ -87,6 +88,3 @@ button.addEventListener("click", function (){
     send()
 })
 
-jouer.addEventListener("click", function () {
-    generer()
-})
