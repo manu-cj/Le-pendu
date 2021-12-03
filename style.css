@@ -21,6 +21,14 @@ body {
     flex-direction: row;
 }
 
+.mot {
+    width: 10%;
+    height: 100%;
+    font-size: 2em;
+    overflow: hidden;
+
+}
+
 #jeu {
     width: 90%;
     height: 700px;

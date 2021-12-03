@@ -56,14 +56,17 @@ function send() {
     if (input.value === mots[randomMot].slice(5, 6)) {
         six.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(7, 8)) {
+    if (input.value === mots[randomMot].slice(6, 7)) {
         sept.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(8, 9)) {
+    if (input.value === mots[randomMot].slice(7, 8)) {
         huit.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(9, 10)) {
+    if (input.value === mots[randomMot].slice(8, 9)) {
         neuf.innerHTML += input.value + ' ';
+    }
+    if (input.value === mots[randomMot].slice(9, 10)) {
+        dix.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(10, 11)) {
         dix.innerHTML += input.value + ' ';
