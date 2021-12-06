@@ -2,7 +2,6 @@ let error = document.getElementById('erreur');
 let input = document.getElementById('input');
 let button = document.getElementById('send');
 let chances = document.getElementById('chances');
-let motGenerer = document.getElementById('motGenerer');
 
 let nombreLettre = document.getElementById('nombreLettre');
 
@@ -24,13 +23,8 @@ let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'kata
     'reveil', 'crayon', 'bug', 'zemour', 'genetique', 'negatif',];
 
 
-
-
-
-
     let randomMot = Math.floor(Math.random() * mots.length);
     console.log(randomMot);
-    motGenerer.innerHTML = mots[randomMot];
     nombreLettre.innerHTML = 'Nombre de lettre : ' + mots[randomMot].length;
 
 
@@ -70,7 +64,9 @@ function send() {
         dix.innerHTML += input.value + ' ';
     }
     if (input.value === mots[randomMot].slice(0)) {
-        alert('win');
+        chances.innerHTML = 'Gagné, le mot était : ' + mots[randomMot];
+        chances.style.color = 'Green';
+        chances.style.fontSize = '1.5em';
     }
     if (input.value !== mots[randomMot]) {
         error.innerHTML += input.value + ' ';
@@ -78,6 +74,9 @@ function send() {
     }
     if (chance < -1){
         chances.innerHTML = 'Perdu, le mot était : ' + mots[randomMot];
+        chances.style.color = 'red';
+        chances.style.fontSize = '2em';
+        error.innerHTML =  'Lettres proposées : ';
     }
 
 }
@@ -85,4 +84,3 @@ function send() {
 button.addEventListener("click", function (){
     send()
 })
-
