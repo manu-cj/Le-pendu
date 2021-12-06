@@ -30,40 +30,40 @@ let mots = ['kebab', 'lotus', 'famille', 'lubullule', 'eolienne', 'chien', 'kata
 
 function send() {
 
-    if (input.value === mots[randomMot].slice(0, 1)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(0, 1)) {
         un.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(1, 2)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(1, 2)) {
         deux.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(2, 3)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(2, 3)) {
         trois.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(3, 4)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(3, 4)) {
         quatre.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(4, 5)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(4, 5)) {
         cinq.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(5, 6)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(5, 6)) {
         six.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(6, 7)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(6, 7)) {
         sept.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(7, 8)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(7, 8)) {
         huit.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(8, 9)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(8, 9)) {
         neuf.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(9, 10)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(9, 10)) {
         dix.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(10, 11)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(10, 11)) {
         dix.innerHTML += input.value + ' ';
     }
-    if (input.value === mots[randomMot].slice(0)) {
+    if (input.value.toLowerCase() === mots[randomMot].slice(0)) {
         chances.innerHTML = 'Gagné, le mot était : ' + mots[randomMot];
         chances.style.color = 'Green';
         chances.style.fontSize = '1.5em';
