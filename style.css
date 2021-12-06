@@ -11,6 +11,7 @@ body {
     align-content: space-around;
     align-items: center;
     margin: 15px;
+    background-color: #b7daff;
 }
 
 #jeu {
@@ -19,6 +20,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #224b86;
+    width: 75%;
+    height: 500px;
+    border: ridge 10px lightgoldenrodyellow;
+    border-radius: 10px;
+    margin: 15px;
 }
 
 #reponse {
@@ -36,30 +43,37 @@ body {
     overflow: hidden;
     border-bottom: ridge 1px black;
     margin: 5px;
+    color: #00ffd0;
 
 }
 
-#jeu {
-    width: 90%;
-    height: 700px;
-    border: ridge 5px royalblue;
+#input {
+    text-align: center;
+    width: 30%;
+    height: 35px;
+    font-size: 1.5em;
     margin: 15px;
 }
 
-#pendu {
-    width: 30%;
-    height: 90%;
-    border: ridge 5px royalblue;
+#nombreLettre {
+    color: #00ffd0;
+    margin: 15px;
 }
 
-#barre-horizontale {
-    width: 60%;
-    height: 3%;
-    background-color: black;
+#regle {
+    width: 50%;
+    margin: 15px;
 }
 
-#barre-laterale {
-    width: 3%;
-    height: 60%;
-    background-color: black;
+a {
+    text-decoration-line: none;
+    color: black;
 }
+
+#reset {
+    margin: 15px;
+    background-color: #ffffff;
+    padding: 10px;
+   border-radius: 10px;
+}
+
